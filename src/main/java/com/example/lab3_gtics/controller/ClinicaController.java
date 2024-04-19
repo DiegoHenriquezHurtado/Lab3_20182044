@@ -7,6 +7,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.List;
+
 @Controller
 @RequestMapping("/")
 public class ClinicaController {
@@ -18,8 +20,8 @@ public class ClinicaController {
 
     @GetMapping(value = {"/listar",""})
     public String listarClinicas(Model model){
-        list<Clinica> lista = ClinicaRepository.findAll();
+        List<Clinica> lista = clinicaRepository.findAll();
         model.addAttribute("listClinicas",lista);
-        return "clinicas/list"
+        return "clinicas/list";
     }
 }
