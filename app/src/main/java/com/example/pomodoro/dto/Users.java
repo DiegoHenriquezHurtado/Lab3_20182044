@@ -1,0 +1,50 @@
+package com.example.pomodoro.dto;
+
+public class Users {
+    private String firtsName;
+    private String lastName;
+    private String email;
+    private String password;
+    private String gender;
+
+    public String getFirtsName() {
+        return firtsName;
+    }
+
+    public void setFirtsName(String firtsName) {
+        this.firtsName = firtsName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+}
