@@ -22,7 +22,7 @@ public class ContadorWorker extends Worker {
                     .build();
             return Result.success(data); // Maneja la parada del trabajo
         }
-        for(int i=25;i >= 0; i--){
+        for(int i=24;i >= 0; i--){
             for(int j=59;j >= 0;j--){
                 String j0;
                 String i0;
