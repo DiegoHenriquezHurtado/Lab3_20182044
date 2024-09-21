@@ -48,9 +48,11 @@ public class MainActivity extends AppCompatActivity {
                     if (response.isSuccessful()) {
                         Users body = response.body();
                         // Usuario encontrado, proceder con el login
-                        intent.putExtra("nombreUsuario",nombreIngresado);
+                        intent.putExtra("nombreUsuario",body.getFirstName());
+                        intent.putExtra("apellido",body.getLastName());
                         intent.putExtra("email",body.getEmail());
                         intent.putExtra("gender",body.getGender());
+                        intent.putExtra("id",body.getId());
                         startActivity(intent);
                         Toast.makeText(MainActivity.this, "Usuario logueado", Toast.LENGTH_SHORT).show();
                         Log.d("msg-test", "Usuario encontrado, email: " + body.getEmail());

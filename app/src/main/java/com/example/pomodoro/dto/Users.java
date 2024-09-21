@@ -1,18 +1,19 @@
 package com.example.pomodoro.dto;
 
 public class Users {
-    private String firtsName;
+    private int id;
+    private String firstName;
     private String lastName;
     private String email;
     private String password;
     private String gender;
 
-    public String getFirtsName() {
-        return firtsName;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirtsName(String firtsName) {
-        this.firtsName = firtsName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {
@@ -47,4 +48,11 @@ public class Users {
         this.gender = gender;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }
